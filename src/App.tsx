@@ -98,20 +98,3 @@ function App() {
 }
 
 export default App
-          Protocolo Jejum com Café Preto
-        </h1>
-        
-        {/* Wistia Video Player */}
-        <div className="max-w-4xl mx-auto mb-8">
-          <div className="wistia_responsive_padding" style={{ paddingTop: '56.25%' }}>
-            <div className="wistia_responsive_wrapper" style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}>
-              <div className="wistia_embed wistia_async_gc9ywrd50y videoFoam=true" style={{ height: '100%', width: '100%' }}>&nbsp;</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export default App
