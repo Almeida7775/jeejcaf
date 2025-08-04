@@ -4,6 +4,7 @@ declare global {
       ready: (callback: () => void) => void;
       [key: string]: any;
     };
+    _wq: Array<any>;
   }
 }
 

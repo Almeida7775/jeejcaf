@@ -2,17 +2,16 @@ import React, { useEffect } from 'react'
 
 function App() {
   useEffect(() => {
-    // Ensure Wistia scripts are loaded
-    const checkWistia = () => {
-      if (window.Wistia) {
-        window.Wistia.ready(() => {
-          console.log('Wistia is ready');
-        });
-      } else {
-        setTimeout(checkWistia, 100);
+    // Initialize Wistia queue if it doesn't exist
+    window._wq = window._wq || [];
+    
+    // Push callback to Wistia queue - will execute when API is ready
+    window._wq.push({
+      id: "gc9ywrd50y",
+      onReady: function(video: any) {
+        console.log('Wistia video is ready');
       }
-    };
-    checkWistia();
+    });
   }, []);
 
   return (
